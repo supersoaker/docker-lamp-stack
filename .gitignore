@@ -1,4 +1,5 @@
 sites/*/*/*
+!sites/localhost/html/index.html
 !sites/localhost/html/.gitkeep
 !sites/localhost/log/.gitkeep
 !sites/test.localhost/html/.gitkeep
