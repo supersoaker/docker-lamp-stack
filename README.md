@@ -22,3 +22,4 @@ Afterwards just execute:
 ```
 docker-compose -it lamp_apache_php /etc/init.d/apache2 reload
 ```
+To see an example just look on sites-enabled/test.localhost.conf
