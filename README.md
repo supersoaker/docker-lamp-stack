@@ -1,5 +1,3 @@
-![Github Downloads Badge](https://img.shields.io/github/downloads/supersoaker/docker-lamp-stack/total.svg "Downloads")
-
 # docker-lamp-stack
 just a lightweight lamp stack (linux - apache - mysql5.7 - php7.1) with docker
 
