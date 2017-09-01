@@ -15,9 +15,9 @@ Now you can connect to your webserver on http://localhost/ or https://localhost/
 
 ### Configuration
 To enable new vhosts:
-- add a new configuration file like "sites-enabled/<<your-new-vhost>>.conf"
-- create the directories sites/<<your-new-vhost>>/html and sites/<<your-new-vhost>>/log
-- adding the new domain to your local /etc/hosts/ file like "127.0.0.1 <<your-new-vhost>>"
+- add a new configuration file like "sites-enabled/{{your-new-vhost}}.conf"
+- create the directories sites/{{your-new-vhost}}/html and sites/{{your-new-vhost}}/log
+- adding the new domain to your local /etc/hosts/ file like "127.0.0.1 {{your-new-vhost}}"
 Afterwards just execute:
 ```
 docker-compose -it lamp_apache_php /etc/init.d/apache2 reload
