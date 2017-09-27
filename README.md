@@ -30,9 +30,21 @@ docker-compose -it lamp_apache_php /etc/init.d/apache2 reload
 ```
 To see an example just look on sites-enabled/test.localhost.conf
 ##### Other php version
-To use another php version:
-- use "docker-compose down" to stop the containers
+- make sure the containers are stopped
 - change the first line in "php/Dockerfile" from "FROM php:7.1-apache" to "FROM php:5.6-apache" or another php version (available versions: https://github.com/docker-library/php)
-- use "docker-compose build" to build the new containers
+- build the new containers
+```
+docker-compose build
+``` 
 - afterwards use "docker-compose up" to start your lamp stack with the new php version
+##### Adding php modules
+- make sure the containers are stopped
+- Open "php/Dockerfile" and add your lines of code to add a new module (For example there is imagick commented out)
+- To enable some modules see https://gist.github.com/tristanlins/4c1da2508f0326a042aa
+- Afterwards build the new containers:
+- build the new containers
+```
+docker-compose build
+``` 
+
 
