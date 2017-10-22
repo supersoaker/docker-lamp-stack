@@ -28,10 +28,10 @@ Afterwards just execute:
 ```
 docker-compose -it lamp_apache_php /etc/init.d/apache2 reload
 ```
-To see an example just look on `sites-enabled/test.localhost.conf`
+To see an example just take a look on [sites-enabled/test.localhost.conf](./sites-enabled/test.localhost.conf) 
 ##### Other php version
 - make sure the containers are stopped
-- change the first line in `php/Dockerfile` from "FROM php:7.1-apache" to "FROM php:5.6-apache" or another php version (available versions: https://github.com/docker-library/php)
+- change the first line in [php/Dockerfile](./php/Dockerfile) from "FROM php:7.1-apache" to "FROM php:5.6-apache" or another php version (available versions: https://github.com/docker-library/php)
 - build the new containers
 ```
 docker-compose build
@@ -42,12 +42,10 @@ docker-compose up
 ```
 ##### Adding php modules
 - make sure the containers are stopped
-- Open "php/Dockerfile" and add your lines of code to add a new module (For example there is imagick commented out)
+- Open [php/Dockerfile](./php/Dockerfile) and add your lines of code to add a new module (For example there is imagick commented out)
 - To enable some modules see https://gist.github.com/tristanlins/4c1da2508f0326a042aa
 - Afterwards build the new containers:
-- build the new containers
 ```
 docker-compose build
 ``` 
-
 
