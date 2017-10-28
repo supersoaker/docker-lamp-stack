@@ -36,4 +36,4 @@ RUN apt-get update && apt-get upgrade -y sendmail && rm -rf /var/lib/apt/lists/*
 RUN echo "$(hostname)" >> /etc/mail/relay-domains
 RUN m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
 RUN echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
-# RUN service sendmail restart
+RUN service sendmail restart
