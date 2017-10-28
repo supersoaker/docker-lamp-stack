@@ -30,10 +30,10 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 #  echo 'sendmail_path = "/usr/sbin/ssmtp -t"' > /usr/local/etc/php/conf.d/mail.ini
 
 # enable mail sending for php with sendmail
-RUN apt-get update && apt-get upgrade -y sendmail && rm -rf /var/lib/apt/lists/* && \
-    echo 'sendmail_path = "/usr/sbin/sendmail -t -i"' > /usr/local/etc/php/conf.d/mail.ini
+#RUN apt-get update && apt-get upgrade -y sendmail && rm -rf /var/lib/apt/lists/* && \
+#    echo 'sendmail_path = "/usr/sbin/sendmail -t -i"' > /usr/local/etc/php/conf.d/mail.ini
 
-RUN echo "$(hostname)" >> /etc/mail/relay-domains
-RUN m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
-RUN echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
-RUN service sendmail restart
+#RUN echo "$(hostname)" >> /etc/mail/relay-domains
+#RUN m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
+#RUN echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
+#RUN service sendmail restart
