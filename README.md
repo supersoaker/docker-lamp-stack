@@ -28,7 +28,7 @@ Afterwards just execute:
 ```
 docker-compose -it lamp_apache_php /etc/init.d/apache2 reload
 ```
-To see an example just take a look on [sites-enabled/test.localhost.conf](./sites-enabled/test.localhost.conf) 
+To see an example just have a look on [sites-enabled/test.localhost.conf](./sites-enabled/test.localhost.conf) 
 ##### Other php version
 - make sure the containers are stopped
 - change the first line in [php/Dockerfile](./php/Dockerfile) from "FROM php:7.1-apache" to "FROM php:5.6-apache" or another php version (available versions: https://github.com/docker-library/php)
