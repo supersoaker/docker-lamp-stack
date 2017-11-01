@@ -1,5 +1,5 @@
 web:
-  container_name: lamp_apache_php
+  container_name: lamp_apache
   build: ./php/
   ports:
     - "80:80"
